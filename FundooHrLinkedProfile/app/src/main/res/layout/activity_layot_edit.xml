@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/notes_add_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_image"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit intro"
+                android:textSize="20sp"
+                android:id="@+id/edit"
+                android:layout_toRightOf="@+id/cancel_image"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:id="@+id/save_button"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:foregroundGravity="right"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile photo"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/user_profile"
+                android:layout_gravity="center"
+                android:background="@drawable/user"
+                />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstName_editText"
+                    android:hint="First Name"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lastName_editText"
+                    android:hint="Last Name"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD FORMER NAME"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textColor="#1591ef"
+                android:textStyle="bold"/>
+
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Headline"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </Spinner>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD NEW EDUCATION"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:id="@+id/new_Education"
+                android:textColor="#1591ef"
+                android:textStyle="bold"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/country_spinner"
+                >
+
+            </Spinner>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/state_spinner"
+                >
+
+            </Spinner>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/town_spinner"
+                >
+
+            </Spinner>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textview_get_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USE CURRENT LOCATION"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textColor="#1591ef"
+                android:textStyle="bold"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textview_set_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USE CURRENT LOCATION"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textColor="#1591ef"
+                android:textStyle="bold"/>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Industry"
+                    android:id="@+id/industry_editText"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Summary"
+                    android:id="@+id/summary_editText"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Media"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Add or link to external documents, photos, sites, videos, and presentations."/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="10dp"
+                >
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Upload"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_bg"
+                    android:id="@+id/upload_button"
+                    />
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Link"
+                    android:textColor="#1591ef"
+                    android:background="@drawable/btn_border"
+                    android:id="@+id/link_button"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/viewlast"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/time_layout"
+                android:layout_marginTop="10dp"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supported providers"
+                android:textColor="#1591ef"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
